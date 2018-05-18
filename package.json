@@ -1,0 +1,19 @@
+{
+  "name": "brusher",
+  "version": "1.0.0",
+  "description": "Wordpress 博客主题 Brusher 源码",
+  "scripts": {
+    "dev": "tsc -w index.ts"
+  },
+  "keywords": ["wordpress", "theme", "brusher"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhw2590582/brusher.git"
+  },
+  "authors": ["Harvey Zack <laozhaochaguan@gmail.com>"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhw2590582/brusher/issues"
+  },
+  "homepage": "https://github.com/zhw2590582/brusher#readme"
+}

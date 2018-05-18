@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* posts */
+
+.posts{
+  .ias-trigger-prev{
+    display: none !important;
+  }
+  article{
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    &.index-post{
+      .post-inner{
+
+      }
+      .post-right{
+        padding: 0 0 0 15px;
+        .post-title{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          a{
+            font-size: 20px;
+          }
+        }
+        .post-content{
+          height: 130px;
+          line-height: 1.7;
+          overflow: hidden;
+          &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: #fff;
+            background: rgba(255, 255, 255, 0.5);
+            background: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.5) 65%, rgba(255, 255, 255, 0.9));
+            background: -o-linear-gradient(transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.5) 65%, rgba(255, 255, 255, 0.9));
+            background: -moz-linear-gradient(transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.5) 65%, rgba(255, 255, 255, 0.9));
+            background: linear-gradient(transparent, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.2) 35%, rgba(255, 255, 255, 0.5) 65%, rgba(255, 255, 255, 0.9));
+          }
+        }
+      }
+    }
+    &.single-post{
+      padding: 15px;
+      .post-top{
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 3px;
+        .item{
+          margin-right: 20px;
+          .fa{
+            margin-right: 5px;
+          }
+          &.edit{
+            margin-right: 0;
+          }
+        }
+      }
+      .post-title{
+        a{
+          font-size: 26px;
+        }
+      }
+      .post-content{
+        font-size: 16px;
+        line-height: 2 !important;
+        margin-bottom: 50px;
+      }
+      .post-copyright{
+        margin-bottom: 30px;
+      }
+      .post-related{
+        margin-bottom: 30px;
+        li{
+          display: inline-block;
+          width: 25%;
+          height: 130px;
+          padding: 0 5px;
+
+          a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            p{
+              position: absolute;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              width: 100%;
+              height: 50px;
+              padding: 25px 10px 0 10px;
+            }
+          }
+        }
+      }
+      .post-meta{
+        li{
+          list-style: none;
+          margin-right: 10px;
+          &.meta-like{
+            margin-right: 0;
+          }
+          &.meta-tabs{
+            a{
+              display: inline-block;
+            }
+          }
+          &.mate-cat{
+            li{
+              display: inline-block;
+            }
+          }
+          .fa{
+            margin-right: 5px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .post-left{
+      position: relative;
+      width: $featured_w;
+      height: $post_h;
+      .post-featured{
+        width: 100%;
+        height: 100%;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+      }
+      .post-tool{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 80px;
+        padding: 40px 5px 0 5px;
+        .view{
+          margin-bottom: 5px;
+        }
+        .fa{
+          width: 20px;
+          text-align: center;
+        }
+      }
+      .post-sticky{
+        position: absolute;
+		z-index: 2;
+        left: 0;
+        top: 0;
+        padding: 3px 5px;
+        .fa{
+          margin-right: 5px;
+        }
+      }
+      .post-edit{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        .fa{
+          width: 20px;
+          text-align: center;
+        }
+        a{
+
+        }
+      }
+    }
+    .post-right{
+      position: relative;
+      .post-title{
+        margin-bottom: 15px;
+        a{
+          display: inline-block;
+          line-height: 1.5;
+          &:hover{
+
+          }
+        }
+      }
+      .post-content{
+        position: relative;
+        line-height: 1.5;
+        h1,h2,h3,h4,h5{
+          font-weight: normal;
+          margin: 15px 0;
+          padding-left: 10px;
+        }
+        blockquote{
+          font-size: 14px;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+        .read_more{
+          display: none;
+        }
+      }
+      .post-meta{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 0 0 15px;
+        li{
+          list-style: none;
+          margin-right: 15px;
+          &.meta-like{
+            margin-right: 0;
+          }
+          &.meta-tabs{
+            a{
+              display: inline-block;
+            }
+          }
+          &.mate-cat{
+            li{
+              display: inline-block;
+            }
+          }
+          .fa{
+            margin-right: 5px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .textload{
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding-left: 15px;
+      p{
+        width: 100%;
+        height: 20px;
+        margin-bottom: 10px;
+        &.title{
+          height: 30px;
+          margin-bottom: 20px;
+        }
+        &:last-child{
+          width: 50%;
+        }
+      }
+    }
+  }
+  .ias-trigger, .ias-noneleft{
+    display: block;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    a{
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 20px;
+    }
+  }
+}
+
+//文章分页
+.posts-nav {
+  .nav-inside {
+    display: inline-block;
+
+    .page-numbers {
+      display: inline-block;
+      float: left;
+      position: relative;
+      margin-left: -1px;
+      min-width: 30px;
+      padding: 0 5px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+
+      &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+}
